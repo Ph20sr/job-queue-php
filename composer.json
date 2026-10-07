@@ -1,0 +1,21 @@
+{
+    "name": "ph20sr/job-queue-php",
+    "description": "Fila de tarefas em segundo plano para PHP usando o próprio MySQL/SQLite (sem Redis): atrasos, retentativas com backoff, tarefas mortas, deduplicação e recuperação de worker que caiu.",
+    "type": "library",
+    "license": "MIT",
+    "keywords": ["queue", "jobs", "background-jobs", "worker", "mysql", "skip-locked", "php", "pdo"],
+    "require": {
+        "php": ">=8.1",
+        "ext-pdo": "*",
+        "ext-json": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^10.5"
+    },
+    "autoload": {
+        "psr-4": { "Ph20sr\\JobQueue\\": "src/" }
+    },
+    "autoload-dev": {
+        "psr-4": { "Ph20sr\\JobQueue\\Tests\\": "tests/" }
+    }
+}
